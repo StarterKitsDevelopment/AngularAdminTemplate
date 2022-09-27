@@ -71,6 +71,7 @@ export class AppMenuitemComponent implements OnInit, OnDestroy {
     key: string = "";
 
     constructor(public layoutService: LayoutService, private cd: ChangeDetectorRef, public router: Router, private menuService: MenuService) {
+        
         this.menuSourceSubscription = this.menuService.menuSource$.subscribe(value => {
             Promise.resolve(null).then(() => {
                 if (value.routeEvent) {
@@ -102,6 +103,7 @@ export class AppMenuitemComponent implements OnInit, OnDestroy {
         if (this.item.routerLink) {
             this.updateActiveStateFromRoute();
         }
+        console.log(this.item)
     }
 
     updateActiveStateFromRoute() {
