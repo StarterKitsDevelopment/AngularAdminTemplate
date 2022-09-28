@@ -9,12 +9,11 @@ import { AppLayoutComponent } from "./layout/app.layout.component";
                 path: '', component: AppLayoutComponent,
                 children: [
                     {
-                        path: '', loadChildren: () => import('./components/dashboard/dashboard.module').then(m => m.DashboardModule)
+                        path: '', loadChildren: () => import('./layout/components/dashboard/dashboard.module').then(m => m.DashboardModule)
                     }
                 ]
             },
-            { path: 'auth', loadChildren: () => import('./components/auth/auth.module').then(m => m.AuthModule) },
-            { path: '**', redirectTo: 'pages/notfound' },
+            { path: 'auth', loadChildren: () => import('./layout/components/auth/auth.module').then(m => m.AuthModule) },
         ], { scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled', onSameUrlNavigation: 'reload' })
     ],
     exports: [RouterModule]
