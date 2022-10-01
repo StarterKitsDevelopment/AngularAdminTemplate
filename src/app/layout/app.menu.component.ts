@@ -26,26 +26,52 @@ export class AppMenuComponent implements OnInit {
                 routerLink: ['/pages'],
                 items: [
                     {
-                        label: 'Auth',
+                        label: 'Activities',
+                        icon: 'pi pi-fw pi-pencil',
+                        routerLink: ['/pages/crud']
+                    },
+                    {
+                        label: 'Contacts',
+                        icon: 'pi pi-fw pi-pencil',
+                        routerLink: ['/auth/login']
+                    },
+                    {
+                        label: 'Employee',
                         icon: 'pi pi-fw pi-user',
                         items: [
                             {
-                                label: 'Login',
+                                label: 'Job',
                                 icon: 'pi pi-fw pi-sign-in',
                                 routerLink: ['/auth/login']
                             },
                             {
-                                label: 'Logout',
+                                label: 'Form',
                                 icon: 'pi pi-fw pi-sign-out',
                                 routerLink: ['/auth/login']
                             }
                         ]
                     },
                     {
-                        label: 'Crud',
+                        label: 'File Image',
                         icon: 'pi pi-fw pi-pencil',
                         routerLink: ['/pages/crud']
                     },
+                    {
+                        label: 'File Upload',
+                        icon: 'pi pi-fw pi-pencil',
+                        routerLink: ['/pages/crud']
+                    },
+                    {
+                        label: 'School',
+                        icon: 'pi pi-fw pi-user',
+                        routerLink: ['/auth/login']
+                    },
+                    {
+                        label: 'Student',
+                        icon: 'pi pi-fw pi-user',
+                        routerLink: ['/auth/login']
+                    },
+
                 ]
             },
         ];

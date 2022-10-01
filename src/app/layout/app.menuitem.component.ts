@@ -103,7 +103,6 @@ export class AppMenuitemComponent implements OnInit, OnDestroy {
         if (this.item.routerLink) {
             this.updateActiveStateFromRoute();
         }
-        console.log(this.item)
     }
 
     updateActiveStateFromRoute() {
