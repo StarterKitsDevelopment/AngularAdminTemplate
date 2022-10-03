@@ -27,51 +27,50 @@ export class AppMenuComponent implements OnInit {
                 items: [
                     {
                         label: 'Activities',
-                        icon: 'pi pi-fw pi-pencil',
-                        routerLink: ['/pages/crud']
+                        icon: 'pi pi-fw pi-at',
+                        routerLink: ['/pages/activities']
                     },
                     {
                         label: 'Contacts',
                         icon: 'pi pi-fw pi-pencil',
-                        routerLink: ['/auth/login']
+                        routerLink: ['/pages/contacts']
                     },
                     {
                         label: 'Employee',
                         icon: 'pi pi-fw pi-user',
                         items: [
                             {
-                                label: 'Job',
-                                icon: 'pi pi-fw pi-sign-in',
-                                routerLink: ['/auth/login']
+                                label: 'Form',
+                                icon: 'pi pi-fw pi-id-card',
+                                routerLink: ['/pages/employee/form']
                             },
                             {
-                                label: 'Form',
-                                icon: 'pi pi-fw pi-sign-out',
-                                routerLink: ['/auth/login']
+                                label: 'Job',
+                                icon: 'pi pi-fw pi-briefcase',
+                                routerLink: ['/pages/employee/job']
                             }
                         ]
                     },
                     {
                         label: 'File Image',
-                        icon: 'pi pi-fw pi-pencil',
-                        routerLink: ['/pages/crud']
+                        icon: 'pi pi-fw pi-image',
+                        routerLink: ['/pages/file-image']
                     },
                     {
                         label: 'File Upload',
-                        icon: 'pi pi-fw pi-pencil',
-                        routerLink: ['/pages/crud']
+                        icon: 'pi pi-fw pi-folder',
+                        routerLink: ['/pages/file-upload']
                     },
                     {
                         label: 'School',
-                        icon: 'pi pi-fw pi-user',
-                        routerLink: ['/auth/login']
+                        icon: 'pi pi-fw pi-building',
+                        routerLink: ['/pages/school']
                     },
                     {
                         label: 'Student',
                         icon: 'pi pi-fw pi-user',
-                        routerLink: ['/auth/login']
+                        routerLink: ['/pages/student']
                     },
-
                 ]
             },
         ];

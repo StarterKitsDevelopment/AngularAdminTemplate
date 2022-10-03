@@ -12,6 +12,7 @@ import { AppConfigModule } from './config/config.module';
 import { AppSidebarComponent } from "./app.sidebar.component";
 import { AppLayoutComponent } from "./app.layout.component";
 import { SharesModule } from './shares/shares.module';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
     declarations: [
@@ -21,6 +22,7 @@ import { SharesModule } from './shares/shares.module';
         AppMenuComponent,
         AppSidebarComponent,
         AppLayoutComponent,
+        PageNotFoundComponent,
     ],
     imports: [
         BrowserModule,
